@@ -2,7 +2,7 @@
 #设置执行权限: chmod +x /root/PassWall.sh
 #脚本存放目录: /root/PassWall.sh
 #定时规则路径: /etc/crontabs/root
-#定时执行内容: 1 0 * * * /bin/bash /PassWall.sh
+#定时执行内容: */10 * * * * /bin/bash /PassWall.sh
 
 DOWNLOAD_URL="https://raw.githubusercontent.com/QianChenZiXE/OpenWrt/refs/heads/main/README.md"
 ORIGINAL_FILENAME="README.md"
