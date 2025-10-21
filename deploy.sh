@@ -3,6 +3,9 @@
 
 echo "=== 开始一键部署 ==="
 
+# 0. 确保 /usr/local/bin 目录存在
+mkdir -p /usr/local/bin
+
 # 1. 下载辅助脚本
 wget -q https://raw.githubusercontent.com/QianChenZiXE/OpenWrt/main/Clean_Temp.sh -O /root/Clean_Temp.sh
 wget -q https://raw.githubusercontent.com/QianChenZiXE/OpenWrt/main/PassWall.sh  -O /root/PassWall.sh
