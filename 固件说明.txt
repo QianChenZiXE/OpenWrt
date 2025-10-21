@@ -1,0 +1,4 @@
+型号:Nanopir5s
+地址:10.0.0.1
+用户:root
+密码:Password
