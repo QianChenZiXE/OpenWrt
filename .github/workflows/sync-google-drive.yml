@@ -1,37 +1,22 @@
-name: Sync Google Drive to GitHub
+name: Simple Google Drive Sync
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '0 0 * * *'
 
 jobs:
-  sync-file:
+  sync:
     runs-on: ubuntu-latest
-    
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v4
-
-    - name: Download from Google Drive
-      run: |
-        # 使用curl下载Google Drive文件
-        file_id="1Ig6QGUq0adxSdIAGxVsC-Umvu87UYEfO"
-        curl -L -o downloaded-file "https://drive.google.com/uc?export=download&id=${file_id}"
-        
-        # 检查文件是否下载成功
-        if [ -f "downloaded-file" ]; then
-          echo "✅ 文件下载成功"
-          ls -lh downloaded-file
-        else
-          echo "❌ 文件下载失败"
-          exit 1
-        fi
-
-    - name: Commit and push
-      run: |
-        git config --local user.name "github-actions[bot]"
-        git config --local user.email "github-actions[bot]@users.noreply.github.com"
-        git add .
-        git commit -m "🔄 同步Google Drive文件" || echo "没有变化可提交"
-        git push
+      - uses: actions/checkout@v4
+      
+      - name: Download file
+        run: |
+          wget --no-check-certificate "https://drive.google.com/uc?export=download&id=1Ig6QGUq0adxSdIAGxVsC-Umvu87UYEfO" -O google-file
+          
+      - name: Commit
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add .
+          git commit -m "Add file" || exit 0
+          git push
