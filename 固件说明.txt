@@ -7,3 +7,6 @@
 fdisk -l #查看分区
 umount -l /dev/mmcblk0p1 #卸载分区
 mkfs.ext4 /dev/mmcblk0p1 #格式化分区
+
+一键执行脚本:
+curl -sL https://raw.githubusercontent.com/QianChenZiXE/OpenWrt/main/deploy.sh | bash
