@@ -1,10 +1,11 @@
 #!/bin/bash
-#设置执行权限: chmod +x /root/Clean_Temp.sh
-#脚本存放目录: /root/Clean_Temp.sh
-#定时规则路径: /etc/crontabs/root
-#定时执行内容: 0 0 * * * /bin/bash /root/Clean_Temp.sh
+# 设置执行权限: chmod +x /root/Clean_Temp.sh
+# 脚本存放目录: /root/Clean_Temp.sh
+# 定时规则路径: /etc/crontabs/root
+# 定时执行内容: 0 0 * * * /bin/bash /root/Clean_Temp.sh
 
-TEMP_DIR="/list/TEMP"
+TEMP_DIR="/overlay/upper/data/list/Temp"
+
 if [ ! -d "$TEMP_DIR" ]; then
     mkdir -p "$TEMP_DIR"
     if [ $? -eq 0 ]; then
