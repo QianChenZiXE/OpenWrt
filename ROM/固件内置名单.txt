@@ -1,0 +1,3 @@
+地址:10.0.0.1
+密码:Password
+内置:Passwall-Docker-OpenList-Frpc
