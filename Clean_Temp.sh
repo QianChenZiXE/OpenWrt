@@ -19,5 +19,8 @@ else
     echo "[$(date)] 已清空目录: $TEMP_DIR"
 fi
 
-# 新增：清理 Jellyfin 缓存
-rm -rf /overlay/upper/data/jellyfin/cache/images/resized-images/* /overlay/upper/data/jellyfin/cache/temp/*
+# 清理 Jellyfin 缓存
+rm -rf /overlay/upper/data/jellyfin/cache/images/resized-images/* /overlay/upper/data/jellyfin/cache/temp/* /overlay/upper/data/jellyfin/cache/omdb/*
+
+# 清理 Halo 日志文件
+rm -rf /overlay/upper/data/halo/logs/*
