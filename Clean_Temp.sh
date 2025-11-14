@@ -4,7 +4,7 @@
 # 定时规则路径: /etc/crontabs/root
 # 定时执行内容: 0 0 * * * /bin/bash /root/Clean_Temp.sh
 
-TEMP_DIR="/overlay/upper/data/list/Temp"
+TEMP_DIR="/overlay/upper/tem/passwall"
 
 if [ ! -d "$TEMP_DIR" ]; then
     mkdir -p "$TEMP_DIR"
@@ -20,7 +20,7 @@ else
 fi
 
 # 清理 Jellyfin 缓存
-rm -rf /overlay/upper/data/jellyfin/cache/images/resized-images/* /overlay/upper/data/jellyfin/cache/temp/* /overlay/upper/data/jellyfin/cache/omdb/*
+rm -rf /overlay/upper/tem/jellyfin/cache/images/resized-images/* /overlay/upper/tem/jellyfin/cache/temp/* /overlay/upper/tem/jellyfin/cache/omdb/*
 
 # 清理 Halo 日志文件
-rm -rf /overlay/upper/data/halo/logs/*
+rm -rf /overlay/upper/tem/halo/logs/*
