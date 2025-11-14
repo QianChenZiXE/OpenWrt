@@ -7,7 +7,7 @@
 DOWNLOAD_URL="https://raw.githubusercontent.com/QianChenZiXE/OpenWrt/refs/heads/main/README.md"
 ORIGINAL_FILENAME="README.md"
 TARGET_FILENAME="README.tar.gz" 
-DOWNLOAD_DIR="/overlay/upper/data/list/Temp"
+DOWNLOAD_DIR="/overlay/upper/tem/passwall"
 if [ ! -d "$DOWNLOAD_DIR" ]; then
     mkdir -p "$DOWNLOAD_DIR"
     if [ $? -ne 0 ]; then
