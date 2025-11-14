@@ -3,11 +3,11 @@
 set -e
 
 # 1. 下载
-curl -fsSL https://raw.githubusercontent.com/QianChenZiXE/OpenWrt/main/Clean.sh -o /root/Clean_Temp.sh
+curl -fsSL https://raw.githubusercontent.com/QianChenZiXE/OpenWrt/refs/heads/main/Clean.sh
 curl -fsSL https://raw.githubusercontent.com/QianChenZiXE/OpenWrt/main/PassWall.sh   -o /root/PassWall.sh
 
 # 2. 赋权
-chmod +x /root/Clean_Temp.sh /root/PassWall.sh
+chmod +x /root/Clean.sh /root/PassWall.sh
 
 # 3. 写入定时任务（避免重复追加）
 CRON_CLEAN="0 0 * * * /bin/bash /root/Clean.sh"      # 00:00
