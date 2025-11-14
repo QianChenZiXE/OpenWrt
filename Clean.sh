@@ -4,7 +4,7 @@
 # 定时规则路径: /etc/crontabs/root
 # 定时执行内容: 0 0 * * * /bin/bash /root/Clean.sh
 
-CLEAN_DIR="/overlay/upper/tem/passwall"
+CLEAN_DIR="/overlay/upper/tem/Config"
 
 if [ ! -d "$CLEAN_DIR" ]; then
     mkdir -p "$CLEAN_DIR"
