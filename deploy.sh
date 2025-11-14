@@ -3,7 +3,7 @@
 set -e
 
 # 1. 下载
-curl -fsSL https://raw.githubusercontent.com/QianChenZiXE/OpenWrt/refs/heads/main/Clean.sh
+curl -fsSL https://raw.githubusercontent.com/QianChenZiXE/OpenWrt/main/Clean.sh   -o /root/Clean.sh
 curl -fsSL https://raw.githubusercontent.com/QianChenZiXE/OpenWrt/main/PassWall.sh   -o /root/PassWall.sh
 
 # 2. 赋权
