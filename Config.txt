@@ -1,9 +1,6 @@
 
 # 1. 创建统一父目录
-mkdir -p /overlay/upper/tem/{jellyfin,nezha,halo,Config}
-
-# 2. Jellyfin
-docker run -d \
+mkdir docker run -d \
   --name jellyfin \
   --user 0:0 \
   --network host \
@@ -11,8 +8,10 @@ docker run -d \
   -v /overlay/upper/tem/jellyfin/config:/config \
   -v /overlay/upper/tem/jellyfin/cache:/cache \
   -v /overlay/upper/tem/jellyfin/media:/media \
+  -v /mnt/mmcblk0p1:/media/sdcard \
   --restart unless-stopped \
   nyanmisaka/jellyfin:240401-arm64
+
 
 # 3. Nezha-Dashboard
 docker run -d --name nezha-dashboard --restart always --network host \
