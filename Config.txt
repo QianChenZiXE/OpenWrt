@@ -29,7 +29,7 @@ docker run -it -d --name halo \
 
 # 5.  VoceChat
 docker run -d --restart=always \
-  -p 3020:3000 \
+  -p 3000:3000 \
   --name vocechat-server \
   privoce/vocechat-server:latest-arm64
 
