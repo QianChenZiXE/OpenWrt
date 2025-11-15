@@ -1,6 +1,6 @@
 
 # 1. 创建统一父目录
-mkdir docker run -d \
+docker run -d \
   --name jellyfin \
   --user 0:0 \
   --network host \
