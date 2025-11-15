@@ -1,5 +1,8 @@
 
 # 1. 创建统一父目录
+mkdir -p /overlay/upper/data/{jellyfin,nezha,halo,Config}
+
+# 2. Jellyfin
 docker run -d \
   --name jellyfin \
   --user 0:0 \
