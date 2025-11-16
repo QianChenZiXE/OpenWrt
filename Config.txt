@@ -1,6 +1,6 @@
 
 # 1. 创建统一父目录
-mkdir -p /overlay/upper/data/{jellyfin,nezha,halo,Config}
+mkdir -p /overlay/upper/data/{jellyfin,nezha,halo,Config,qlmb}
 
 # 2. Jellyfin
 docker run -d \
@@ -35,3 +35,13 @@ docker run -d --restart=always \
   --name vocechat-server \
   privoce/vocechat-server:latest-arm64
 
+# 6.  青龙面板
+docker run -dit \
+  -v /overlay/upper/tem/qlmb:/ql/data \
+  -p 5700:5700 \
+  -e QlBaseUrl="/" \
+  -e QlPort="5700" \
+  --name qinglong \
+  --hostname qinglong \
+  --restart unless-stopped \
+  whyour/qinglong:latest
