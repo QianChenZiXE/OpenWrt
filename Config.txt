@@ -38,6 +38,7 @@ docker run -d --restart=always \
 # 6.  青龙面板
 docker run -dit \
   -v /overlay/upper/tem/qlmb:/ql/data \
+  -v /overlay/upper/tem/qlmb:/overlay/upper/tem/qlmb \
   -p 5700:5700 \
   -e QlBaseUrl="/" \
   -e QlPort="5700" \
