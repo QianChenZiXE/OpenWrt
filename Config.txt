@@ -1,6 +1,6 @@
 
 # 1. 创建统一父目录
-mkdir -p /overlay/upper/tem/{jellyfin,nezha,halo,Config,qlmb}
+mkdir -p /overlay/upper/tem/{jellyfin,nezha,halo,Config,qlmb,jsux}
 
 # 2. Jellyfin
 docker run -d \
@@ -46,3 +46,13 @@ docker run -dit \
   --hostname qinglong \
   --restart unless-stopped \
   whyour/qinglong:latest
+
+# 7.  工具箱
+docker run -d \
+  --name jisuxiang \
+  --restart always \
+  -p 3080:3000 \
+  -v /overlay/upper/tem/jsux/data:/app/data \
+  -v /overlay/upper/tem/jsux/logs:/app/logs \
+  -v /overlay/upper/tem/jsux/config:/app/config \
+  star7th/jisuxiang:arm-latest
