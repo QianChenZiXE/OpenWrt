@@ -1,0 +1,181 @@
+! ============================================
+! 基础广告服务拦截
+! ============================================
+
+! 谷歌广告联盟
+||doubleclick.net^
+||googleadservices.com^
+||googlesyndication.com^
+||google-analytics.com^
+||googletagmanager.com^
+
+! 腾讯广告
+||qcloud.com/ad
+||tencentmind.com^
+||gtimg.com/js/ads^
+||qq.com/ads^
+||tencent.com/ads^
+
+! 阿里/淘宝联盟
+||alimama.com^
+||tanx.com^
+||taobao.com/go/act^
+||alibaba.com/promotion^
+
+! 百度广告
+||baidu.com/push^
+||bdstatic.com/ad^
+||baidustatic.com/ad^
+||baidupcs.com/ad^
+
+! 字节跳动广告
+||bytedance.com/ad^
+||toutiao.com/ad^
+||douyin.com/ad^
+||snssdk.com/ad^
+
+! 视频广告
+||iqiyi.com/ad^
+||youku.com/ad^
+||tenvideo.com/ad^
+||bilibili.com/adx^
+
+! 移动端广告
+||miaozhen.com^
+||admaster.com.cn^
+||tanwan.com^
+||applovin.com^
+
+! ============================================
+! 隐私追踪拦截
+! ============================================
+
+! 用户行为追踪
+||umeng.com^
+||umengcloud.com^
+||umtrack.com^
+||talkingdata.com^
+||cnzz.com^
+||51.la^
+
+! 设备信息收集
+||deviceid.org^
+||adjust.com^
+||appsflyer.com^
+||branch.io^
+
+! 社交追踪
+||facebook.net/tr^
+||twitter.com/i/jot^
+||weibo.com/aj/mobile/log^
+
+! ============================================
+! 恶意软件拦截
+! ============================================
+
+! 加密货币挖矿
+||coinhive.com^
+||crypto-loot.com^
+||miner.pr0gramm.com^
+||jsecoin.com^
+||2giga.link^
+
+! 恶意重定向
+||luckyorange.com^
+||histats.com^
+||statcounter.com^
+||addthis.com^
+
+! 弹窗和恶意下载
+||popads.net^
+||propellerads.com^
+||pushnotification.com^
+
+! ============================================
+! 国内应用广告拦截
+! ============================================
+
+! 小米广告
+||ad.xiaomi.com^
+||sdkconfig.ad.xiaomi.com^
+||tracking.miui.com^
+||api.ad.xiaomi.com^
+
+! 华为广告
+||hicloud.com/ad^
+||huawei.com/ad^
+||vmall.com/ad^
+
+! OPPO/VIVO广告
+||heytap.com/ad^
+||nearme.com.cn/ad^
+||vivo.com.cn/ad^
+
+! 新闻应用开屏广告
+||ifeng.com/ad^
+||sina.com.cn/ad^
+||sohu.com/ad^
+||163.com/ad^
+
+! ============================================
+! 智能电视广告拦截
+! ============================================
+
+! 小米电视
+||tvads.mi.com^
+||mitvapis.com/ad^
+||pandora.xiaomi.com/ad^
+
+! 其他电视品牌
+||skyworth.com/ad^
+||tcl.com/ad^
+||hisense.com/ad^
+
+! OTT视频广告
+||iqiyi.com/ott^
+||youku.com/ott^
+||tenvideo.com/ott^
+
+! ============================================
+! 白名单（重要服务）
+! ============================================
+
+! 微软更新
+@@||update.microsoft.com^
+@@||windowsupdate.microsoft.com^
+@@||*.windowsupdate.com^
+
+! 苹果服务
+@@||*.apple.com^
+@@||*.icloud.com^
+@@||*.apps.apple.com^
+
+! 国内重要服务
+@@||*.gov.cn^
+@@||*.edu.cn^
+@@||*.12306.cn^
+
+! 银行和支付
+@@||*.alipay.com^
+@@||*.wechatpay.cn^
+@@||*.unionpay.com^
+@@||*.ccb.com^
+@@||*.icbc.com.cn^
+
+! 常用应用核心功能
+@@||*.qq.com/mail^
+@@||*.weixin.qq.com^
+@@||*.taobao.com/item^
+
+! ============================================
+! 性能优化规则
+! ============================================
+
+! 阻止大文件广告
+$script,third-party,domain=~cn|~com.cn,size>1000000
+
+! 阻止Flash和过时技术
+$object,domain=~localhost|~local
+
+! 阻止隐藏元素（可选，可能影响部分网站）
+#$elemhide,domain=~taobao.com|~tmall.com
