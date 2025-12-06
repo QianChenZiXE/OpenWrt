@@ -1,5 +1,4 @@
 ! 白名单 - 放行
-@@||staorxe.com^
-
+@@||example.org^
 ! 黑名单 - 阻止
-||staorxe.com^
+||example.org^
