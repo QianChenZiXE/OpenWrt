@@ -1,12 +1,5 @@
 ! 白名单 - 放行
 @@||staorxe.com^
-@@||*.staorxe.com^
 
 ! 黑名单 - 阻止
-||netflav.com^
-||xvideos.com^
-||pornhub.com^
-||jable.tv^
-||missav.ai^
-||missav.ws^
-||hohoj.tv^
+||staorxe.com^
