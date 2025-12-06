@@ -1,7 +1,19 @@
-! 白名单 - 放行Google
+! 白名单 - 放行
 @@||staorxe.com^
 @@||*.staorxe.com^
 
-! 黑名单 - 阻止staorxe
-||staorxe.com^
-||*.staorxe.com^
+! 黑名单 - 阻止
+||netflav.com^
+||*.netflav.com^
+||xvideos.com^
+||*.xvideos.com^
+||pornhub.com^
+||*.pornhub.com^
+||jable.tv^
+||*.jable.tv^
+||missav.ai^
+||*.missav.ai^
+||missav.ws^
+||*.missav.ws^
+||hohoj.tv^
+||*.hohoj.tv^
