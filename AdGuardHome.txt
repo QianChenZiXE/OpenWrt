@@ -4,16 +4,9 @@
 
 ! 黑名单 - 阻止
 ||netflav.com^
-||*.netflav.com^
 ||xvideos.com^
-||*.xvideos.com^
 ||pornhub.com^
-||*.pornhub.com^
 ||jable.tv^
-||*.jable.tv^
 ||missav.ai^
-||*.missav.ai^
 ||missav.ws^
-||*.missav.ws^
 ||hohoj.tv^
-||*.hohoj.tv^
