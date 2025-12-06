@@ -1,5 +1,4 @@
-! 极简百度屏蔽
-||baidu.com^
-||baidu.cn^
-||bdstatic.com^
-||baiduboxapp.com^
+! 白名单 - 放行
+@@||example.org^
+! 黑名单 - 阻止
+||example.org^
