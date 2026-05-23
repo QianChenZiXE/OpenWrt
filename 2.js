@@ -1,0 +1,1 @@
+launchApp("微信")
