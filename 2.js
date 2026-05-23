@@ -1,1 +1,1 @@
-launchApp("微信")
+launchApp("钉钉")
